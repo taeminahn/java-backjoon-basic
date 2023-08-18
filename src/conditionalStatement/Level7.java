@@ -13,21 +13,19 @@ public class Level7 {
         for(int i = 0; i < 3; i++){
             numArr[i] = sc.nextInt();
             if(i != 0) {
-                // if(numArr[i] == numArr[i-1]){
-                //     sameNumCount ++;
-                //     sameNum = numArr[i];
-                // }
                 if(numArr[i] >= bigNum){
                     bigNum = numArr[i];
                 }
             }else {
                 bigNum = numArr[i];
-                // sameNum = numArr[i];
             }
         }
         for(int i = 0; i < 3; i++) {
-            if(numArr[i] == numArr[i+1]){
-                sameNum = numArr[i];
+            for(int j = i+1; j < 3; j++) {
+                if(numArr[i] == numArr[j]) {
+                    sameNum = numArr[i];
+                    sameNumCount ++;
+                }
             }
         }
         switch(sameNumCount) {
@@ -37,7 +35,7 @@ public class Level7 {
             case 1:
             System.out.println(1000 + sameNum * 100);
             break;
-            case 2:
+            default:
             System.out.println(10000 + sameNum * 1000);
         }
     }
