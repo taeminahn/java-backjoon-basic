@@ -18,9 +18,8 @@ public class Level9 {
             int secondBasket = sc.nextInt() - 1;
             int changeCount = secondBasket - firstBasket;
             for(int j = 0; j < changeCount; j++){
-//                System.out.print("firstBasket : " + firstBasket + "/ secondBasket : " + secondBasket);
                 if(firstBasket - secondBasket >= 0){
-                    return;
+                    break;
                 }
                 int temp1 = basketArr[firstBasket];
                 int temp2 = basketArr[secondBasket];
