@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Level5 {
+public class Level8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
