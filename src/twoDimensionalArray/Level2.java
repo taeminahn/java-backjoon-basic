@@ -1,4 +1,4 @@
-package two.dimensional.array;
+package twoDimensionalArray;
 
 import java.util.Scanner;
 public class Level2 {
